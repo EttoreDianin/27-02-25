@@ -1,4 +1,29 @@
+h1{
+    text-align: center;
+}
+th,td{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: wheat;
+    padding: 10px;
+    text-align: center;
+}
+
+.relatorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tabela{
+    
+}
+
+th{
+background-color: black;
+color: white;
+
+}
 body{
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
 }
