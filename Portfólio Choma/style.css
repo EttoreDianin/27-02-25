@@ -1,0 +1,103 @@
+body {
+    background-color: #D3D3D3;
+}
+
+h1 {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+}
+
+
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.Biografia {
+    background-color: #DCDCDC;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.Objetivosdevida {
+    background-color: #DCDCDC;
+    color: #000;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.Habilidadeseconhecimento {
+    background-color: #DCDCDC;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20PX;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+footer {
+    background-color: gray;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p:first-child strong {
+    font-size: 25px;
+    text-align: center;
+}
+
+footer p strong:nth-of-type(2) {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.highlight {
+    color: #000;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+
+.apresentação img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
