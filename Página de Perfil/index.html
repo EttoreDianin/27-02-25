@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+   
+    <link rel="stylesheet" href="fontes/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1 class="bg-preto rounded" style="width: 100%; border-radius: 20px;">Página de Perfil</h1>
+        </header>
+        <div class="text-center">
+            <img class="img-fluid profile-image" src="image/WhatsApp_Image_2025-03-16_at_16.39.05-removebg-preview.png" alt="Profile Image">
+        </div>
+        
+        <h2 class="mt-4 h5">Informações Pessoais</h2>
+        <div class="card">
+            <div class="card-body lead">
+                <p><strong>Nome:</strong> Ettore Luiz Petta Dianin</p>
+                <p><strong>Idade:</strong> 18 anos.</p>
+                <p><strong>Email:</strong> ettoredianin@gmail.com</p>
+                <p><strong>Biografia:</strong> Sou Ettore Luiz Petta Dianin, tenho 18 anos, natural de Mandaguari-PR. Desde cedo, sempre tive interesse pela área de tecnologia. Atualmente, dedico meu tempo cursando Análise e Desenvolvimento de Sistemas na universidade Unicesumar-Maringá, além de trabalhar como barista em um restaurante de minha cidade.</p>
+            </div>
+        </div>
+        <div class="icon-container">
+            <a href="https://www.instagram.com/ettoredianin_/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x custom-icon"></i>
+            </a>
+            <a href="https://github.com/EttoreDianin" target="_blank">
+                <i class="fa-brands fa-github custom-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ettore-dianin-5993a6241/" target="_blank">
+                <i class="fa-brands fa-linkedin custom-icon"></i>
+            </a>
+            
+        </div>
+        
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container mt-4">
+        <h2 class="mt-4 h5">Atividades Recentes</h2>
+        <ul class="list-group lead">
+            <li class="list-group-item">Atividade 1: Descrição da atividade 1</li>
+            <li class="list-group-item">Atividade 2: Descrição da atividade 2</li>
+            <li class="list-group-item">Atividade 3: Descrição da atividade 3</li>
+        </ul>
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="mt-4 h5">Contato</h2>
+        <form class="lead">
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="custom-button">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
