@@ -1,0 +1,50 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-preto{
+    background-color: black;
+    border: none;
+    color: white;
+    
+}
+
+.profile-image {
+    background-color: white;
+    width: 300;
+    height: 250px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    float: left;
+    margin-right: 20px;
+    margin-top: 60px;
+}
+
+.icon-container {
+    margin-left: 25px;
+    display: flex;
+    justify-content: left;
+}
+
+.custom-icon {
+    color: black;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
+h2 {
+    background-color: gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.custom-button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 15px;
+}
