@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Namorar comigo?</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #no-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #no-button.fugir {
+            transform: translateX(100vw);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vc que namorar comigo?</h1>
+        <button onclick="escrever('Sim')">Sim</button>
+        <button id="no-button" onclick="escrever('Não')">Não</button>
+        <h2 id="resposta"></h2>
+    </div>
+
+    <script>
+        function escrever(resposta) {
+            const respostaElement = document.getElementById('resposta');
+            if (resposta === 'Sim') {
+                respostaElement.textContent = "Que bom! Vamos namorar!";
+            } else {
+                respostaElement.textContent = resposta;
+
+                if (resposta === 'Não') {
+                    const noButton = document.getElementById('no-button');
+                    noButton.classList.add('fugir');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
