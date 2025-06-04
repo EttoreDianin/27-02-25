@@ -1,0 +1,56 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String dadosArquivo = "";
+        ArrayList<Produto> produtos = new ArrayList<>();
+
+        try (FileReader arquivo = new FileReader("produtos.txt")) {
+
+            int ascii = arquivo.read();
+            while (ascii != -1){
+                dadosArquivo += (char) ascii;
+                ascii = arquivo.read();
+            }
+        }catch (FileNotFoundException erro){
+            System.out.println("Arquivo não encontrado");
+        }catch (IOException erro){
+            System.out.println("Erro ao fechar arquivo");
+        }
+
+        String[] linhas = dadosArquivo.split("\n");
+
+        for (String linha : linhas){
+
+            String[] valores = linha.split(";");
+
+            int id = Integer.valueOf(valores[0]);
+            String nome = valores[1];
+            double preco = Double.valueOf(valores[2]);
+
+            Produto produto = new Produto(id, nome, preco);
+            produtos.add(produto);
+        }
+
+        for (Produto p : produtos){
+            System.out.println(p.toString());
+        }
+
+
+
+//        try (FileWriter arquivo = new FileWriter("produtos.txt")) {
+//            arquivo.write("1;Teclado;54.90\n");
+//            arquivo.append("2;mouse;1.99\n");
+//
+//        }catch (IOException erro){
+//            System.out.println("Erro na criação do arquivo!");
+//        }
+
+
+    }
+}
